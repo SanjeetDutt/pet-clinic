@@ -1,12 +1,7 @@
 package in.sanjeetdutt.petclinic.services;
 
-import java.util.Set;
+import in.sanjeetdutt.petclinic.models.Vet;
 
-public interface VetService {
+public interface VetService extends CrudService<Vet, Long> {
 
-    in.sanjeetdutt.petclinic.models.Vet findById(Long id);
-
-    in.sanjeetdutt.petclinic.models.Vet save(in.sanjeetdutt.petclinic.models.Vet owner);
-
-    Set<in.sanjeetdutt.petclinic.models.Vet> findAll();
 }
